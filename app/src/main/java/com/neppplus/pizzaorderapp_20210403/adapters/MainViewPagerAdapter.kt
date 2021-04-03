@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.neppplus.pizzaorderapp_20210403.fragments.MyProfileFragment
 import com.neppplus.pizzaorderapp_20210403.fragments.PizzaStoreListFragment
 
-class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
+class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {

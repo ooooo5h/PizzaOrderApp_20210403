@@ -9,15 +9,16 @@ import com.neppplus.pizzaorderapp_20210403.R
 import com.neppplus.pizzaorderapp_20210403.datas.Store
 
 class PizzaStoreAdapter(
-    val mContext : Context,
-    val resId : Int,
-    val mList : ArrayList<Store>) : ArrayAdapter<Store>(mContext, resId, mList) {
+    val mContext: Context,
+    val resId: Int,
+    val mList: ArrayList<Store>
+) : ArrayAdapter<Store>(mContext, resId, mList) {
 
     val inflater = LayoutInflater.from(mContext)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var tempRow = convertView
-        if(tempRow == null) {
+        if (tempRow == null) {
 
             tempRow = inflater.inflate(R.layout.store_list_item, null)
 
